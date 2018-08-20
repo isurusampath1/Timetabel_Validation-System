@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Back end routines to add/delete rooms, invoked by dean.php
- * @author Avin E.M
- */
+
 
 require_once('functions.php');
 require_once('connect_db.php');

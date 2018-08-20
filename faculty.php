@@ -74,7 +74,7 @@ if(!sessionCheck('level','faculty'))
               <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
               <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>';
     ?>
-              <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+              <li class="limenu"><a href="coursem.php">Manage Courses</a></li>
               <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
               <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>
@@ -144,6 +144,6 @@ if(!sessionCheck('level','faculty'))
       </div>
     </div>
   </div>
- <!--  <div id="footer">Powered by CLTS Creaters</div> -->
+ 
 </body>
 </html>

@@ -212,12 +212,12 @@ if($_POST)
   <div id="shadowhead">Manage Timetables</div>
   <div id="nav_bar">
     <ul class="main_menu" id="main_menu">
-    <li class="limenu"><a href="dean.php">Manage Timetables</a></li>
+    <li class="limenu"><a href="admin.php">Manage Timetables</a></li>
     <li class="limenu"><a href="manage.php?action=departments">Manage Degree Programe</a></li>
     <li class="limenu"><a href="manage.php?action=faculty">Manage Users</a></li>
     <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
     <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>
-    <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+    <li class="limenu"><a href="coursem.php">Manage Courses</a></li>
     <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
     <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>

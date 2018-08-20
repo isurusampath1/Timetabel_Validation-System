@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Back end routines to add/delete departments, invoked by manage.php
- * @author Avin E.M
- */
 
 require_once('functions.php');
 if(!sessionCheck('level','dean'))
@@ -17,12 +13,12 @@ if(valueCheck('action','add'))
   try{
     $query = $db->prepare('INSERT INTO depts(dept_code,dept_name) values (?,?)');
     $query->execute([$dept_code,$_POST['dName']]);
-    postResponse("addOpt","Deparment Added",[$_POST['dName'],$dept_code]);         
+    postResponse("addOpt","Programe Added",[$_POST['dName'],$dept_code]);         
   }
   catch(PDOException $e)
   {
     if($e->errorInfo[0]==23000)
-      postResponse("error","Deparment already exists");
+      postResponse("error","Programe already exists");
     else
       postResponse("error",$e->errorInfo[2]);
   }
@@ -32,6 +28,6 @@ elseif(valueCheck('action','delete'))
 {
   $query = $db->prepare('DELETE FROM depts where dept_code =?');
   $query->execute([$dept_code]);
-  postResponse("removeOpt","Deparment deleted");
+  postResponse("removeOpt","Programe deleted");
 }
 ?>
