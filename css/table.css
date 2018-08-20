@@ -38,10 +38,10 @@ span {
     position: relative;
     height: 50px;
     width: 120px;
-    color: white;
-    background: #052b42 padding-box;
-    border: 1px solid white !important;
-    box-shadow: 0 0 25px #052b42 inset;
+    color: black;
+    background: white padding-box;
+    border: 1px solid black !important;
+    box-shadow: 0 0 25px white inset;
     vertical-align: middle;
     text-align: center;
     font-weight: bold;
