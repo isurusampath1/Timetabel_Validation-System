@@ -187,12 +187,12 @@ input-placeholder {
 input[type=text],
 input[type=password],
 ul.chosen-choices {
-    background: #4286f4;
+    background: white;
     border-radius: 3px;
     border: none;
-    box-shadow: #4286f4 inset;
+    box-shadow: white inset;
     transition: all 0.2s linear;
-    color: white;
+    color: black;
     font-size: 13px;
     position: relative;
     height: 28px;
@@ -240,7 +240,7 @@ input.styled:focus {
 input[type=text]:focus,
 input[type=password]:focus,
 .chosen-container-active .chosen-choices {
-    box-shadow: 0 1px 0 #93c273 inset, 0 -1px 0 #93c273 inset, 1px 0 0 #93c273 inset, -1px 0 0 #93c273 inset, 0 0 4px rgba(147, 194, 115, 0.5);
+    /* box-shadow: 0 1px 0 #93c273 inset, 0 -1px 0 #93c273 inset, 1px 0 0 #93c273 inset, -1px 0 0 #93c273 inset, 0 0 4px rgba(147, 194, 115, 0.5); */
     color: #2b2b2b;
 }
 

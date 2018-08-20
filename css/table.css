@@ -50,8 +50,8 @@ span {
 
 .cell.disabled,
 .cell.blank {
-    background: #052b42 padding-box !important;
-    box-shadow: 0 0 20px #052b42 inset !important;
+    background: #0315ba padding-box !important;
+    box-shadow: 0 0 20px #0315ba inset !important;
     color: white;
 }
 
