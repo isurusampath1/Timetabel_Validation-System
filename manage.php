@@ -273,6 +273,6 @@ require_once ('connect_db.php');
     </div>
   <?php endif; ?>
   </div>
- <!--  <div id="footer">Powered by CLTS Creaters</div> -->
+
 </body>
 </html>

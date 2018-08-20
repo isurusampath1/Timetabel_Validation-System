@@ -1,9 +1,6 @@
 ﻿<?php
 
-/**
- * Provides interface for initial system setup and dean account registration.
- * @author Avin E.M
- */
+
 
 if (file_exists('config.php'))
   include('config.php');
@@ -99,7 +96,7 @@ if($config)
         persistent_create_option: true});
     })
   </script>
-  <title>QuickSlots | Setup</title>
+  <title>UCSC APD | Setup</title>
 </head>
 
 <body class="center">
@@ -108,7 +105,7 @@ if($config)
       <div class="boxbg"></div>
       <?php if(empty($db)): ?>
       <div class="db"></div>
-      <div class="title">Setup a databse for quickslots to use</div>
+      <div class="title">Setup a databse for Timetable Management System to use</div>
       <div class="elements">
         <form method="post" action="setup.php">
           <input type="text" name="db_host" class="styled details" required title="Please enter database host" placeholder="Database host" />

@@ -425,7 +425,7 @@ HTML;
         }
         ?>
       </div>
-      <!-- <div id="footer" style="position: relative">Powered by CLTS Creaters</div> -->
+      
     </div>
     <div id="rightpane" style="width: 235px;margin-left:10px">
    <!--  <?php if(!sessionCheck('level','faculty')) : ?>

@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Back end routines to add/delete courses, invoked by faculty.php
- * @author Avin E.M
- */
 
 require_once('functions.php');
 if(!sessionCheck('logged_in'))

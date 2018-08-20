@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Contains various common helper routines used across most files
- * @author Avin E.M
- */
+
 
 ini_set('session.gc_maxlifetime', 24*3600);
 ini_set('session.cookie_lifetime', 24*3600);

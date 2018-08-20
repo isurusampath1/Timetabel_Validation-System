@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Provides interface and back end routines that handle user logins
- * @author Avin E.M
- */
+
 
 require_once ('connect_db.php');
 require_once ('functions.php');
@@ -50,7 +47,7 @@ if(sessionCheck('logged_in'))
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <script src="js/jquery.min.js"></script>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <title>QuickSlots | Login</title>
+  <title>UCSC APD | Login</title>
   <script src="js/form.js"></script>
 </head>
 
@@ -73,7 +70,7 @@ if(sessionCheck('logged_in'))
       </form>
     </div>
   </div>
-  <div id="footer" style="margin:0">Powered by CLTS Creaters</div>
+  
 </body>
 
 </html>

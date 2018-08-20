@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Initiates database connections
- * @author Avin E.M
- */
+
 
 if (file_exists('config.php')) {
   include('config.php');
