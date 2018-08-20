@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Provides interface and back end routines for allocation of courses to time slots
- * @author Avin E.M
- */
+
 
 require_once('functions.php');
 if(!sessionCheck('logged_in'))
@@ -347,13 +344,13 @@ HTML;
     <ul class="main_menu" id="main_menu">
     <?php
     if(sessionCheck('level','dean'))
-      echo '<li class="limenu"><a href="dean.php">Manage Timetables</a></li>
-            <li class="limenu"><a href="manage.php?action=departments">Manage Departments</a></li>
+      echo '<li class="limenu"><a href="admin.php">Manage Timetables</a></li>
+            <li class="limenu"><a href="manage.php?action=departments">Manage Degree Programe</a></li>
             <li class="limenu"><a href="manage.php?action=faculty">Manage Users</a></li>
             <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
             <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>';
     ?>
-            <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+            <li class="limenu"><a href="coursem.php">Manage Courses</a></li>
             <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
             <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>
@@ -399,12 +396,12 @@ HTML;
           <div style="display:table-cell;width:20px"></div>
           <div class="cell disabled">Disabled</div>
         </div>
-        <span style="line-height: 25px">
+        <!-- <span style="line-height: 25px">
           &#9679; Drag and Drop a course from the right panel to the required slot<br>
           &#9679; Double-click on a slot to clear it<br>
           &#9679; Conflicting Slots are indicated in red and would contain the number of batches affected<br>
           &#9679; A '~' before a course indicates that its conflicts are not considered
-        </span>
+        </span> -->
       </div>
       <div id="disabledSlots">
       <?php
@@ -428,7 +425,7 @@ HTML;
         }
         ?>
       </div>
-      <div id="footer" style="position: relative">Powered by CLTS Creaters</div>
+      <!-- <div id="footer" style="position: relative">Powered by CLTS Creaters</div> -->
     </div>
     <div id="rightpane" style="width: 235px;margin-left:10px">
    <!--  <?php if(!sessionCheck('level','faculty')) : ?>
@@ -456,7 +453,7 @@ HTML;
       </div>
       <div class="title" style="padding: 15px 0">Assign Room</div>
       <span id="roomSelect">Click on a slot to assign room</span>
-      <div class="title stretch" style="padding:20px 0 10px 0">Conflict Details</div>
+<!--       <div class="title stretch" style="padding:20px 0 10px 0">Conflict Details</div>
       <table id="conflict_info">
         <tr>
           <th>Course</th>
@@ -466,7 +463,7 @@ HTML;
         <tr style="font-style:">
           <td colspan="3" id="conflict_help" >&#9679; Drop a course into a conflicting slot to show conflict details</td>
         </tr>       
-      </table>
+      </table> -->
     </div>
   </div>
 </body>
