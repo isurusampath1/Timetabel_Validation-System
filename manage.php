@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Restricted to dean level users, provides interface and back end routines to manage departments, faculty, batches and rooms
- * @author Avin E.M
- */
+
 
 require_once('functions.php');
 if(!sessionCheck('level','dean'))
@@ -56,12 +53,12 @@ require_once ('connect_db.php');
   <div id="shadowhead"></div>
   <div id="nav_bar">
     <ul class="main_menu" id="main_menu">
-      <li class="limenu"><a href="dean.php">Manage Timetables</a></li>
-      <li class="limenu"><a href="manage.php?action=departments">Manage Departments</a></li>
+      <li class="limenu"><a href="admin.php">Manage Timetables</a></li>
+      <li class="limenu"><a href="manage.php?action=departments">Manage Degree Programe</a></li>
       <li class="limenu"><a href="manage.php?action=faculty">Manage Users</a></li>
       <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
       <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>
-      <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+      <li class="limenu"><a href="coursesm.php">Manage Courses</a></li>
       <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
       <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>
@@ -76,7 +73,7 @@ require_once ('connect_db.php');
         <form method="post" action="register.php">
           <input type="text" name="fullName" class="styled uInfo" required pattern=".{6,50}" title="6 to 50 characters" placeholder="Full Name" />
           <input type="text" name="uName" class="styled username" required pattern="[^ ]{3,25}" title="3 to 25 characters without spaces" placeholder="Username" />
-          <select  name="dept" class="stretch" data-placeholder="Choose Department..." required>
+          <select  name="dept" class="stretch" data-placeholder="Choose Degree Programe..." required>
             <option label="Choose Department..."></option>
             <?php
             foreach($db->query('SELECT * FROM depts') as $dept)
@@ -161,11 +158,11 @@ require_once ('connect_db.php');
     <div class="box">
       <div class="boxbg"></div>
       <div class="information"><div class="icon add"></div></div>
-      <div class="title">Add Department</div>
+      <div class="title">Add Degree Programe</div>
       <div class="elements">
         <form method="post" action="depts.php?action=add">
-          <input type="text" name="dept_code" class="styled details" required pattern="[^ ]{2,5}" title="2 to 5 characters" placeholder="Department Code" />
-          <input type="text" name="dName" class="styled details" required pattern=".{6,50}" title="6 to 50 characters" placeholder="Department Name" />
+          <input type="text" name="dept_code" class="styled details" required pattern="[^ ]{2,5}" title="2 to 5 characters" placeholder="Programe Code" />
+          <input type="text" name="dName" class="styled details" required pattern=".{6,50}" title="6 to 50 characters" placeholder="Programe Name" />
           <div class="blocktext info"></div>
           <div class="center button">
             <button>Add</button>
@@ -176,11 +173,11 @@ require_once ('connect_db.php');
     <div class="box">
       <div class="boxbg"></div>
       <div class="information"><div class="icon remove"></div></div>
-      <div class="title">Delete Department</div>
+      <div class="title">Delete Degree Programe</div>
       <div class="elements">
         <form method="post" action="depts.php?action=delete">
-          <select name="dept_code" class="updateSelect stretch"  data-placeholder="Choose Department..." required>
-            <option label="Choose Department..."></option>
+          <select name="dept_code" class="updateSelect stretch"  data-placeholder="Choose Programe..." required>
+            <option label="Choose Programe..."></option>
             <?php
             foreach($db->query('SELECT * FROM depts') as $dept)
               echo "<option value=\"{$dept['dept_code']}\">{$dept['dept_name']} ({$dept['dept_code']})</option>";
@@ -201,7 +198,7 @@ require_once ('connect_db.php');
       <div class="elements">
         <form method="post" action="batches.php?action=add">
           <input type="text" name="batch_name" class="styled uInfo" required pattern="[^:]{2,30}" title="2 to 30 alphanumeric characters" placeholder="Batch Name" />
-          <select name="dept" class="stretch" data-placeholder="Choose Department..." required>
+          <select name="dept" class="stretch" data-placeholder="Choose Degree Programe..." required>
             <option label="Choose Department..."></option>
             <?php
             foreach($db->query('SELECT * FROM depts') as $dept)
@@ -276,6 +273,6 @@ require_once ('connect_db.php');
     </div>
   <?php endif; ?>
   </div>
-  <div id="footer">Powered by CLTS Creaters</div>
+ <!--  <div id="footer">Powered by CLTS Creaters</div> -->
 </body>
 </html>

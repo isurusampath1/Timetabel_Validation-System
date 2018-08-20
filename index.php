@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Provides interface to display the timetable
- * @author Avin E.M
- */
+
 
 require_once('functions.php');
 require_once('connect_db.php');
@@ -204,13 +201,13 @@ if(!empty($_GET['batch']))
     <ul class="main_menu" id="main_menu">
     <?php
       if(sessionCheck('level','dean'))
-        echo '<li class="limenu"><a href="dean.php">Manage Timetables</a></li>
-              <li class="limenu"><a href="manage.php?action=departments">Manage Departments</a></li>
+        echo '<li class="limenu"><a href="admin.php">Manage Timetables</a></li>
+              <li class="limenu"><a href="manage.php?action=departments">Manage Degree Programe</a></li>
               <li class="limenu"><a href="manage.php?action=faculty">Manage Users</a></li>
               <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
               <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>';
     ?>
-              <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+              <li class="limenu"><a href="coursesm.php">Manage Courses</a></li>
               <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
               <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>
@@ -296,10 +293,10 @@ if(!empty($_GET['batch']))
         </form>
         <?php endif;?>
       </div> -->
-      <div id="footer" style="position: relative">Powered by CLTS Creaters</div>
+      <!-- <div id="footer" style="position: relative">Powered by CLTS Creaters</div> -->
     </div>
     <div id="rightpane">
-      <div class="title stretch" style="padding:40px 0 10px 0">Course Details</div>
+      <!-- <div class="title stretch" style="padding:40px 0 10px 0">Course Details</div>
       <table id="course_info">
         <tr class="course_name">          
           <th>Course</th><td rowspan="4" style="color:#999">&#9679; Click on a course to show details</td>
@@ -313,7 +310,7 @@ if(!empty($_GET['batch']))
         <tr class="batches">
           <th>Batches</th>
         </tr>    
-      </table>        
+      </table>  -->       
     </div>
     <div id="disabledSlots">
       <?php
