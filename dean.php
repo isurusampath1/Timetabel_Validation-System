@@ -1,9 +1,6 @@
 <?php
 
-/**
- * Homepage of dean level users, provides interface and back end routines to edit and save global settings
- * @author Avin E.M
- */
+
 
 require_once('functions.php');
 if(!sessionCheck('level','dean'))
@@ -216,11 +213,11 @@ if($_POST)
   <div id="nav_bar">
     <ul class="main_menu" id="main_menu">
     <li class="limenu"><a href="dean.php">Manage Timetables</a></li>
-    <li class="limenu"><a href="manage.php?action=departments">Manage Departments</a></li>
+    <li class="limenu"><a href="manage.php?action=departments">Manage Degree Programe</a></li>
     <li class="limenu"><a href="manage.php?action=faculty">Manage Users</a></li>
     <li class="limenu"><a href="manage.php?action=batches">Manage Batches</a></li>
     <li class="limenu"><a href="manage.php?action=rooms">Manage Lecture Hall</a></li>
-    <li class="limenu"><a href="faculty.php">Manage Courses</a></li>
+    <li class="limenu"><a href="coursesm.php">Manage Courses</a></li>
     <li class="limenu"><a href="allocate.php">Allocate Timetable</a></li>
     <li class="limenu"><a href="./">View Timetable</a></li>
     </ul>
