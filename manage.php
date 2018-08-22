@@ -87,7 +87,7 @@ require_once ('connect_db.php');
               <input type="radio" class="styled" name="level" id="addFaculty" value="faculty" checked><label for="addFaculty">Faculty</label>
             </div> -->
             <div class="inline">
-              <input type="radio" class="styled" name="level" id="addHOD" value="hod"><label for="addHOD">Asst:Admin</label>
+              <input type="radio" class="styled" name="level" id="addHOD" value="hod"><label for="addHOD">Lecture</label>
             </div>
             <div class="inline">
               <input type="radio" class="styled" name="level" id="addDean" value="dean"><label for="addDean">Admin</label>
@@ -119,7 +119,7 @@ require_once ('connect_db.php');
               <input type="radio" class="styled" name="level" id="changeFaculty" value="faculty"><label for="changeFaculty">Faculty</label>
             </div> -->
             <div class="inline">
-              <input type="radio" class="styled" name="level" id="changeHOD" value="hod"><label for="changeHOD">Ast:Admin</label>
+              <input type="radio" class="styled" name="level" id="changeHOD" value="hod"><label for="changeHOD">Lecture</label>
             </div>
             <div class="inline">
               <input type="radio" class="styled" name="level" id="changeDean" value="dean"><label for="changeDean">Admin</label>
