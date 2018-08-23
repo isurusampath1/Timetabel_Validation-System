@@ -219,15 +219,15 @@ if(!empty($_GET['batch']))
         <div class="title inline" style="width:77%;margin:-20px 0 0 0">
         <?php if(sessionCheck('logged_in')): ?>
           <div class="title">
-            <span class="inline" style="vertical-align: middle;padding-top:10px">Timetable:</span>
-            <select id="table_name" name="table" style="width: 170px" data-placeholder="Add a timetable...">
-              <?php
+           <!--  <span class="inline" style="vertical-align: middle;padding-top:10px">Timetable:</span> -->
+            <!-- <select id="table_name" name="table" style="width: 170px" data-placeholder="Add a timetable..."> -->
+              <!-- <?php
                 foreach($db->query('SELECT * FROM timetables') as $timetable)
                 {
                   $active = $timetable['active']?' (active)':'';
                   echo "<option value=\"{$timetable['table_name']}\">{$timetable['table_name']}{$active}</option>";
                 }
-              ?>
+              ?> -->
             </select>
           </div>
         <?php endif; ?>

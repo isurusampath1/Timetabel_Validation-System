@@ -284,10 +284,10 @@ if($_POST)
             <input type="checkbox" class="styled" name="active" value="1" id="active" <?=($current["active"]=="1")?"checked":""?>>
             <label for="active">Current active timetable</label>
           </div>
-          <div style="margin:0 0 2px 0">
+         <!--  <div style="margin:0 0 2px 0">
             <input type="checkbox" class="styled" name="frozen" value="1" id="frozen" <?=($current["frozen"]=="1")?"checked":""?>>
             <label for="frozen">Freeze timetable</label>
-          </div>
+          </div> -->
           <br>
           <div class="blocktext info" style="margin: -25px 0 0 5px"></div>
           <div class="center button"><button>Save</button></div>

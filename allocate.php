@@ -379,7 +379,7 @@ HTML;
         ?>
         <?php if(valueCheck("error","conflict")): ?>
           <div class="blocktext info error">
-            <b>&#10006; </b>&nbsp; Another faculty has just allocated one of the slots. Please try again  
+            <b>&#10006; </b>&nbsp; Another Lecture has just allocated one of the slots. Please try again  
           </div>
         <?php else: ?>
           <div class="blocktext info">
@@ -448,11 +448,11 @@ HTML;
           echo "<div class=\"course\" id=\"{$course['course_id']}\"> <span {$conflict}>{$course['course_name']} ({$course['course_id']})</span></div>";
         }
         if(!$courses)
-          echo 'You have not started offering any courses.<br>Visit the <b>Manage Courses</b> section to add courses'
+          echo 'No any courses yet'
         ?>        
       </div>
-      <div class="title" style="padding: 15px 0">Assign Room</div>
-      <span id="roomSelect">Click on a slot to assign room</span>
+      <div class="title" style="padding: 15px 0">Assign Hall</div>
+      <span id="roomSelect">Click on a slot to assign hall</span>
 <!--       <div class="title stretch" style="padding:20px 0 10px 0">Conflict Details</div>
       <table id="conflict_info">
         <tr>

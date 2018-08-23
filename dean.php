@@ -285,8 +285,8 @@ if($_POST)
             <label for="active">Current active timetable</label>
           </div>
           <div style="margin:0 0 2px 0">
-            <input type="checkbox" class="styled" name="frozen" value="1" id="frozen" <?=($current["frozen"]=="1")?"checked":""?>>
-            <label for="frozen">Freeze timetable</label>
+           <!--  <input type="checkbox" class="styled" name="frozen" value="1" id="frozen" <?=($current["frozen"]=="1")?"checked":""?>>
+            <label for="frozen">Freeze timetable</label> -->
           </div>
           <br>
           <div class="blocktext info" style="margin: -25px 0 0 5px"></div>
@@ -327,7 +327,7 @@ if($_POST)
           <button>Restore</button>
         </form> -->
       </div>
-      <div id="footer" style="position: relative">Powered by <a href="">CLTS Creaters</a></div>
+      
     </div>
     <div class="inline" style="width: 250px;margin: 0 0 0 2px">
       <div class="box" style="margin-top:15px;width: 250px;background-size: 250px 9px, 250px 16px">

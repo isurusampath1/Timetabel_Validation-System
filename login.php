@@ -59,7 +59,7 @@ if(sessionCheck('logged_in'))
       <div class="avatar"><div class="icon key"></div></div>
       <div class="title">Login</div>
       <form id="loginform" method="post" action="login.php">
-        <input type="text" name="uName" class="styled username" required placeholder="Username/Roll No." />
+        <input type="text" name="uName" class="styled username" required placeholder="Username" />
         <input type="password" name="pswd" class="styled pswd" required placeholder="Password" />
         <div class="blocktext info"></div>
         <div class="center button" >
